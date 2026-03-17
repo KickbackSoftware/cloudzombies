@@ -1,8 +1,5 @@
 import { Game } from "phaser";
-import { Preloader } from "./preloader";
-import { GameOverScene } from "./scenes/GameOverScene";
-import { HudScene } from "./scenes/HudScene";
-import { MainScene } from "./scenes/MainScene";
+import { MapSelectScene } from "./scenes/MapSelectScene";
 import { MenuScene } from "./scenes/MenuScene";
 import { SplashScene } from "./scenes/SplashScene";
 import { DominionScene } from "./scenes/DominionScene";
@@ -11,14 +8,14 @@ import { DominionScene } from "./scenes/DominionScene";
 const config = {
     type: Phaser.AUTO,
     parent: "phaser-container",
-    width: 960,
-    height: 540,
+    width: 1565,
+    height: 960,
     backgroundColor: "#1c172e",
     pixelArt: true,
     roundPixel: false,
     max: {
-        width: 800,
-        height: 600,
+        width: 1565,
+        height: 960,
     },
     scale: {
         mode: Phaser.Scale.FIT,
@@ -31,13 +28,12 @@ const config = {
         }
     },
     scene: [
+        //SplashScene,
+        // MenuScene,
+        MapSelectScene,
         DominionScene,
-        Preloader,
-        SplashScene,
-        MainScene,
-        MenuScene,
-        HudScene,
-        GameOverScene
+        // HudScene,
+        // GameOverScene
     ]
 };
 
