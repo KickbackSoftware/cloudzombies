@@ -13,6 +13,7 @@ const config = {
     backgroundColor: "#1c172e",
     pixelArt: true,
     roundPixel: false,
+    maxLights: 20,
     max: {
         width: 1565,
         height: 960,
@@ -28,12 +29,10 @@ const config = {
         }
     },
     scene: [
-        //SplashScene,
+        // SplashScene,
         // MenuScene,
-        MapSelectScene,
+        // MapSelectScene,
         DominionScene,
-        // HudScene,
-        // GameOverScene
     ]
 };
 

@@ -1,0 +1,8 @@
+{
+    "name": "cloudzombes",
+    "workspaces": ["cloudzombies-client", "cloudzombies-server"],
+    "scripts": {
+        "client": "npm run dev --workspace cloudzombies-client",
+        "server": "npm run dev --workspace cloudzombies-server"
+    }
+}
